@@ -1,1 +1,1 @@
-# (Usmonjon Hasanov's project)[https://www.usmonjon.uz]
+# [Usmonjon Hasanov's project](https://www.usmonjon.uz)
