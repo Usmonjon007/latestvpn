@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --primary-color: #F53838;
+    --text-color: #0B132A;
+    --text-secondary-color: #4F5665;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* btn */
+.btn {
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    background: var(--primary-color);
+    padding: 13px 45px;
+    transition: all .3s ease;
+    border: 2px solid var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-outline {
+    background: #FFFFFF;
+    color: var(--primary-color);
+}
+
+.btn:hover,
+.btn:focus {
+    background: #FFFFFF;
+    color: var(--primary-color);
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+    background: var(--primary-color);
+    color: #FFFFFF;
+}
+
+/* section */
+section {
+    margin-top: 80px;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+
+.navbar .container .logo {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar .container .logo span span {
+    font-weight: 700;
+}
+
+.navbar .container .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+}
+
+.navbar .container .nav-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .container .nav-list ul .nav-link {
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    transition: all .3s ease;
+}
+
+.navbar .container .nav-list ul .nav-link:hover,
+.navbar .container .nav-list ul .nav-link:focus {
+    color: var(--text-color);
+}
+
+.navbar .container .auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar .container .auth a.sing-in {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.navbar .container .auth a.sing-in:hover,
+.navbar .container .auth a.sing-in:focus {
+    color: var(--text-secondary-color);
+}
+
+.navbar .container .auth .btn {
+    font-weight: 500;
+    border-width: 1px;
+}
+
+/* navbar end */
+
+/* home start */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.home .container .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .container .top .left {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.home .container .top .left .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home .container .top .left .text .title {
+    color: var(--text-color);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+.home .container .top .left .text .title span {
+    font-weight: 700;
+}
+
+.home .container .top .left .text .desc {
+    color: var(--text-secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.home .container .top .left .text .desc span {
+    font-weight: 500;
+}
+
+.home .container .top .left .btn {
+    padding: 17px 77.5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .container .top .left .btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(27px);
+    z-index: -1;
+}
+
+.home .container .top .right {
+    width: 50%;
+}
+
+.home .container .top .right img {
+    width: 100%;
+}
+
+.home .container .bottom {
+    width: 100%;
+    padding: 37px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background: #FFFFFF;
+    /* box-shadow: 0 50px 10px 0 rgba(13, 16, 37, 0.06); */
+}
+
+.home .container .bottom::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0.06;
+    background: #0D1025;
+    filter: blur(57px);
+}
+
+.home .container .bottom .item {
+    width: 100%;
+    padding: 24px 113px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36.5px;
+}
+
+.home .container .bottom .item:not(:last-child) {
+    border-right: 2px solid #EEEFF2;
+}
+
+.home .container .bottom .item .icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 9999px;
+    background: #FFECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .container .bottom .item .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home .container .bottom .item .text .count {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.home .container .bottom .item .text .title {
+    color: var(--text-secondary-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* home end */
+
+/* features start */
+.features {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .container .left,
+.features .container .right {
+    width: 50%;
+}
+
+.features .container .left img {
+    width: 100%;
+}
+
+.features .container .right {
+    width: 427px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features .container .right .title {
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.features .container .right .desc {
+    color: var(--text-secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.features .container .right .features-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.features .container .right .features-list .features-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+    color: var(--text-secondary-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* features end */
+.plans {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.plans .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.plans .container .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.plans .container .text .title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.plans .container .text .desc {
+    color: var(--text-secondary-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.plans .container .plans-list {
+    list-style: none;
+    width: 100%;
+    height: 760px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plans .container .plans-list .plans-item {
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid #DDD;
+    background: #FFF;
+    padding: 80px 70px 50px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plans .container .plans-list .plans-item.featured {
+    border-color: var(--primary-color);
+}
+
+.plans .container .plans-list .plans-item .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.plans .container .plans-list .plans-item .top .title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.plans .container .plans-list .plans-item .top .plan-item__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plans .container .plans-list .plans-item .top .plan-item__list .plan-item__list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+.plans .container .plans-list .plans-item .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.plans .container .plans-list .plans-item .bottom .cost {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.plans .container .plans-list .plans-item .bottom .cost span {
+    font-weight: 400;
+    color: var(--text-secondary-color);
+}
+
+.plans .container .plans-list .plans-item.featured .bottom .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.plans .container .plans-list .plans-item.featured .bottom .btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 100%;
+    border-radius: 60px;
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(27px);
+    z-index: 0;
+}
