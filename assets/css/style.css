@@ -814,6 +814,7 @@ section {
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
+    box-shadow: 0 16.5px 57px 0 rgba(13, 16, 37, 0.06);
 }
 
 .newsletter .text {
